@@ -84,7 +84,7 @@ header a:hover{
 
 #showcase{
 	min-height: 400px;
-	background:url('./images/showcase.jpg') no-repeat;
+	background:url('./images/bg3.jpg') no-repeat;
 	text-align: center;
 	color: #ffffff;
 	background-size: cover;
@@ -138,9 +138,15 @@ header a:hover{
 	margin-bottom: 50px;
 	width: 90px;
 }
-
+#boxes #box3{
+	
+	text-align: center;
+}
 #boxes #box3 img{
-	width: 1px;
+
+	margin-top: 11px;
+	margin-bottom: 51px;
+	width: 115px;
 	height: -10px;
 }
 
