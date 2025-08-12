@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="./js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
-    <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script> -->
     <title>Mkd Web Design | Welcome</title>
   </head>
   <body>
@@ -50,22 +50,8 @@
           </p>
         </div>
       </div>
-      <div id="vantajs" style="width:100%; height:500px;"></div>
+      <!-- <div id="vantajs" style="width:100%; height:500px;"></div> -->
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
-      <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
-      <script>
-        VANTA.BIRDS({
-          el: "#vantajs",
-          colorMode: "lerpGradient",
-          wingSpan: 23.0,
-          speedLimit: 8.0,
-          separation: 60.0,
-          alignment: 35.0,
-          cohesion: 24.0,
-          backgroundAlpha: 0.36
-        });
-      </script>
     </section>
     <section id="newsletter">
       <div class="container">
@@ -118,5 +104,21 @@
       </div>
     </section>
     <footer><p>Mkd Web Design, Copyright &copy; 2018</p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="https://www.vantajs.com/dist/vanta.birds.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        VANTA.BIRDS({
+          el: "#vantajs",
+          colorMode: "lerpGradient",
+          wingSpan: 23.0,
+          speedLimit: 8.0,
+          separation: 60.0,
+          alignment: 35.0,
+          cohesion: 24.0,
+          backgroundAlpha: 0.36
+        });
+      });
+    </script>
   </body>
 </html>
