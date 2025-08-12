@@ -109,13 +109,16 @@
       document.addEventListener("DOMContentLoaded", function () {
         VANTA.BIRDS({
           el: "#vantajs",
-          colorMode: "lerpGradient",
-          wingSpan: 23.0,
-          speedLimit: 8.0,
-          separation: 60.0,
-          alignment: 35.0,
-          cohesion: 24.0,
-          backgroundAlpha: 0.36
+          backgroundAlpha: 0.0, // make background transparent so overlay text shows
+          color1: 0xff9900,     // bird gradient color 1 (orange)
+          color2: 0x5500ff,     // bird gradient color 2 (purple)
+          birdSize: 1.5,
+          wingSpan: 20.0,
+          speedLimit: 5.0,
+          separation: 50.0,
+          alignment: 50.0,
+          cohesion: 20.0,
+          quantity: 3           // number of birds
         });
       });
     </script>
